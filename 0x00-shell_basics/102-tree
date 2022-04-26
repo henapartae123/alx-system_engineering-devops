@@ -1,0 +1,3 @@
+#!/bin/bash
+#script that creates welcome
+mkdir -p welcome/to/school
