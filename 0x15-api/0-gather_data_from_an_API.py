@@ -2,10 +2,10 @@
 """A script that returns information about a given employee 
 TODO list progress"""
 
-import requests
-import sys
-
 if __name__ == "__main__":
+
+    import requests
+    import sys 
 
     userId = sys.argv[1]
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}"
