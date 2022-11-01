@@ -21,8 +21,8 @@ def top_ten(subreddit):
             'Edg/97.0.1072.62'
         ])
     }
-    limit = 10
     sort = 'top'
+    limit = 10
     res = requests.get(
         '{}/r/{}/.json?sort={}&limit={}'.format(
             BASE_URL, 
