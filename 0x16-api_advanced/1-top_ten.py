@@ -24,10 +24,10 @@ def top_ten(subreddit):
     sort = 'top'
     limit = 10
     res = requests.get(
-        '{}/r/{}/hot/.json?sort={}&limit={}'.format(
-            BASE_URL, 
-            subreddit, 
-            sort, 
+        '{}/r/{}/.json?sort={}&limit={}'.format(
+            BASE_URL,
+            subreddit,
+            sort,
             limit
         ),
         headers=api_headers,
