@@ -25,15 +25,15 @@ defaults
     timeout client  10000
     timeout server  10000
 listen web servers
-    bind 0.0.0.0:80
+    bind *:80
     mode http
     stats enable
     stats uri /haproxy?stats
     balance roundrobin
     option httpclose
     option forwardfor
-    server 1701-web-01 107.23.62.195 check
-    server 1701-web-02 54.82.242.147 check
+    server 1701-web-01 107.23.62.195:80 check
+    server 1701-web-02 54.82.242.147:80 check
 " >> /etc/haproxy/haproxy.cfg
 
 sudo service haproxy start
