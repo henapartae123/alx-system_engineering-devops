@@ -32,8 +32,8 @@ listen web servers
     balance roundrobin
     option httpclose
     option forwardfor
-    server 1701-web-01 44.200.170.103 check
-    server 1701-web-02 44.192.77.150 check
+    server 1701-web-01 107.23.62.195 check
+    server 1701-web-02 54.82.242.147 check
 " >> /etc/haproxy/haproxy.cfg
 
 sudo service haproxy start
