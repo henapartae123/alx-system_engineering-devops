@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Configures an Ubuntu server
+# configure ip address on an Ubuntu server 
 
 cp /etc/hosts ~/hosts.new
-echo "127.0.2		localhost" > ~/hosts.new
+echo "127.0.0.2		localhost" > ~/hosts.new
 echo "8.8.8.8		facebook.com" >> ~/hosts.new
-cp -f ~/host.new /etc/hosts
+cp -f ~/hosts.new /etc/hosts
