@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #prints a string 10 times
 
-counter=0
+count=0
 
-until [ $counter -gt 5 ]
+until [ $count -eq 10 ]
 do
-  echo Counter
-  ((counter++))
+  echo "Best School"
+  ((count++))
 done
