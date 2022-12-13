@@ -2,4 +2,3 @@
 # Displays a list of current running processes
 
 ps aux
-
